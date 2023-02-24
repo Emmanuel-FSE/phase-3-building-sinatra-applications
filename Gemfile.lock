@@ -37,6 +37,8 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     rack (2.2.3)
+    rack-contrib (2.3.0)
+      rack (~> 2.0)
     rack-protection (2.1.0)
       rack
     rack-test (1.1.0)
@@ -74,16 +76,19 @@ GEM
     tilt (2.0.10)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    webrick (1.7.0)
     zeitwerk (2.4.2)
 
 PLATFORMS
   universal-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   activerecord (~> 6.1)
   database_cleaner
   faker (~> 2.18)
   pry
+  rack-contrib
   rack-test (~> 1.1)
   rake
   require_all
@@ -92,6 +97,7 @@ DEPENDENCIES
   sinatra (~> 2.1)
   sinatra-activerecord
   sqlite3 (~> 1.4)
+  webrick
 
 BUNDLED WITH
    2.2.23
